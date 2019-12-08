@@ -1,0 +1,156 @@
+@font-face { /* adding 'Monsters Inc. official font */
+
+  font-family: 'monster_agregular';
+  src: url('fonts/monster_ag-webfont.woff2') format('woff2'),
+    url('fonts/monster_ag-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+
+  background-color: #D7D9D3;
+}
+
+.header {
+
+  text-align: center;
+  font-size: 2em;
+  text-indent: 3em;
+  font-family: 'monster_agregular';
+  background-color: lightblue;
+  border-bottom: 10px solid #007DC4;
+  margin: auto;
+  padding: 1em;
+}
+
+.rightlogo {
+
+  float: right;
+  max-width: 200px;
+}
+
+.leftlogo {
+
+  margin-top: 2.5em;
+  float: left;
+  max-width: 50px;
+  margin-left: 2%;
+}
+
+.bottomgif {
+
+  width: 100%;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+}
+
+.bottomgif img {
+
+  width: 400px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10%;
+}
+
+.bottomgif.flipped {
+
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+}
+
+.restartPara{
+
+  text-align: center;
+  font-family: 'monster_agregular';
+  position: absolute;
+  background: cyan;
+}
+
+body {
+
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.playArea {
+
+  width: 100%;
+  height: 100%;
+  display: flex;
+  float: left;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  perspective: 1500px;
+  background-image: url("img/layout/poker.jpg");
+  margin-top: 3%;
+  transition: all 1s;
+}
+
+.playArea.pre-animation{
+
+  opacity: 0;
+  max-height: 0;
+}
+
+.container {
+  transition: all 1s;
+}
+
+.container.pre-animation {
+  opacity:0;
+  max-height: 0;
+}
+
+.card {
+
+  width: 165px;
+  height: 165px;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  margin: 20px;
+}
+
+
+.front, .back {
+
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+}
+
+.card img {
+
+  display: block;
+  border-radius: 10px;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.front {
+
+  width: 100%;
+  height: 100%;
+}
+
+.front:hover {
+
+  transition: 0.8s;
+  transform: rotateX(20deg);
+  -webkit-transform: rotateX(20deg);
+  box-shadow: 0 20px 20px rgba(50, 50, 50, .2);
+}
+
+.back {
+
+  transform: rotateY(180deg);
+}

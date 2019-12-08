@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">   <!-- adding main css file -->
+    <link rel="stylesheet" href="img/animate.css">  <!-- adding animations -->
+    <link rel="icon" href="favicon.ico">    <!-- adding site icon -->
+
+    <title>Memory Monsters</title>
+</head>
+
+<body>
+
+    <div class="header">
+        <img src="img/layout/logo2.png" class="rightlogo" onclick="mikeAudio.play()">
+        <img src="img/layout/logo1.png" class="leftlogo" onclick="booAudio.play()">
+        <h1>Memory Monsters</h1>
+    </div>
+
+    <!-- designated area for card creation -->
+    <div class="playArea pre-animation" id="playArea">
+
+
+    </div>
+
+
+    <div class="bottomgif flipped" id='notASurprise' onclick="window.location.reload()">
+        <img src="img/layout/dance2.gif">
+        <h2 class="restartPara flipped" id="restartPara">CLICK GIF TO RESTART</h2>
+    </div>
+
+
+    <!-- adding main Javascript file -->
+    <script type="text/javascript" src="js/script.js"></script>
+    <!-- adding confetti animation script -->
+    <script src="js/confetti.js"></script>
+    <!-- adding random script -->
+    <script src="js/seedrandom.js"></script>
+
+</body>
+
+</html>
