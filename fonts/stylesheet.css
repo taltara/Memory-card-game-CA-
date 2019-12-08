@@ -1,0 +1,18 @@
+
+
+
+
+@font-face {
+    
+font-family: 'monster_agregular';
+    
+src: url('fonts/monster_ag-webfont.woff2') format('woff2'),
+         
+url('fonts/monster_ag-webfont.woff') format('woff');
+    
+font-weight: normal;
+    
+font-style: normal;
+
+
+}
